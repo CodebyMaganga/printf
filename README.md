@@ -1,2 +1,2 @@
-this is a PRINTF project between joseph and maganga
+Printf Project done by Maganga Mwambonu and Joseph Njaci
 
