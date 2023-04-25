@@ -1,5 +1,9 @@
 #include "main.h"
 
+<<<<<<< HEAD
+=======
+/****************** PRINT POINTER ******************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 /**
  * print_pointer - Prints the value of a pointer variable
  * @types: List a of arguments
@@ -33,7 +37,11 @@ int print_pointer(va_list types, char buffer[],
 	while (num_addrs > 0)
 	{
 		buffer[ind--] = map_to[num_addrs % 16];
+<<<<<<< HEAD
 		num_addrs /= 16;
+=======
+	num_addrs /= 16;
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 		length++;
 	}
 
@@ -51,6 +59,10 @@ int print_pointer(va_list types, char buffer[],
 		width, flags, padd, extra_c, padd_start));
 }
 
+<<<<<<< HEAD
+=======
+/************************* PRINT NON PRINTABLE *************************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 /**
  * print_non_printable - Prints ascii codes in hexa of non printable chars
  * @types: Lista of arguments
@@ -79,7 +91,11 @@ int print_non_printable(va_list types, char buffer[],
 	{
 		if (is_printable(str[i]))
 			buffer[i + offset] = str[i];
+<<<<<<< HEAD
 		else
+=======
+else
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 			offset += append_hexa_code(str[i], buffer, i + offset);
 
 		i++;
@@ -90,6 +106,10 @@ int print_non_printable(va_list types, char buffer[],
 	return (write(1, buffer, i + offset));
 }
 
+<<<<<<< HEAD
+=======
+/************************* PRINT REVERSE *************************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 /**
  * print_reverse - Prints reverse string.
  * @types: Lista of arguments
@@ -122,8 +142,12 @@ int print_reverse(va_list types, char buffer[],
 	}
 	for (i = 0; str[i]; i++)
 		;
+<<<<<<< HEAD
 
 	for (i = i - 1; i >= 0; i--)
+=======
+for (i = i - 1; i >= 0; i--)
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 	{
 		char z = str[i];
 
@@ -132,6 +156,10 @@ int print_reverse(va_list types, char buffer[],
 	}
 	return (count);
 }
+<<<<<<< HEAD
+=======
+/************************* PRINT A STRING IN ROT13 *************************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 /**
  * print_rot13string - Print a string in rot13.
  * @types: Lista of arguments
@@ -170,7 +198,11 @@ int print_rot13string(va_list types, char buffer[],
 				x = out[j];
 				write(1, &x, 1);
 				count++;
+<<<<<<< HEAD
 				break;
+=======
+		break;
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 			}
 		}
 		if (!in[j])
@@ -183,5 +215,8 @@ int print_rot13string(va_list types, char buffer[],
 	return (count);
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc

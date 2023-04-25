@@ -1,5 +1,9 @@
 #include "main.h"
 
+<<<<<<< HEAD
+=======
+/************************* PRINT CHAR *************************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 
 /**
  * print_char - Prints a char
@@ -18,6 +22,10 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
+<<<<<<< HEAD
+=======
+/************************* PRINT A STRING *************************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 /**
  * print_string - Prints a string
  * @types: List a of arguments
@@ -72,6 +80,10 @@ int print_string(va_list types, char buffer[],
 
 	return (write(1, str, length));
 }
+<<<<<<< HEAD
+=======
+/************************* PRINT PERCENT SIGN *************************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 /**
  * print_percent - Prints a percent sign
  * @types: Lista of arguments
@@ -94,6 +106,10 @@ int print_percent(va_list types, char buffer[],
 	return (write(1, "%%", 1));
 }
 
+<<<<<<< HEAD
+=======
+/************************* PRINT INT *************************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 /**
  * print_int - Print int
  * @types: Lista of arguments
@@ -119,8 +135,12 @@ int print_int(va_list types, char buffer[],
 
 	buffer[BUFF_SIZE - 1] = '\0';
 	num = (unsigned long int)n;
+<<<<<<< HEAD
 
 	if (n < 0)
+=======
+if (n < 0)
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 	{
 		num = (unsigned long int)((-1) * n);
 		is_negative = 1;
@@ -137,6 +157,10 @@ int print_int(va_list types, char buffer[],
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 
+<<<<<<< HEAD
+=======
+/************************* PRINT BINARY *************************/
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 /**
  * print_binary - Prints an unsigned number
  * @types: Lista of arguments
@@ -165,7 +189,11 @@ int print_binary(va_list types, char buffer[],
 	a[0] = n / m;
 	for (i = 1; i < 32; i++)
 	{
+<<<<<<< HEAD
 		m /= 2;
+=======
+m /= 2;
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 		a[i] = (n / m) % 2;
 	}
 	for (i = 0, sum = 0, count = 0; i < 32; i++)

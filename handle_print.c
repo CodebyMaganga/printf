@@ -32,7 +32,11 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 			return (-1);
 		unknow_len += write(1, "%%", 1);
 		if (fmt[*ind - 1] == ' ')
+<<<<<<< HEAD
 			unknow_len += write(1, " ", 1);
+=======
+unknow_len += write(1, " ", 1);
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 		else if (width)
 		{
 			--(*ind);

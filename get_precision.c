@@ -27,7 +27,11 @@ int get_precision(const char *format, int *i, va_list list)
 		}
 		else if (format[curr_i] == '*')
 		{
+<<<<<<< HEAD
 			curr_i++;
+=======
+curr_i++;
+>>>>>>> eb6c5e9652189802fbdda1ff5e6c5369e377cffc
 			precision = va_arg(list, int);
 			break;
 		}
